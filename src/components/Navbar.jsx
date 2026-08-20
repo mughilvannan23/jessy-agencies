@@ -1,31 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import logoImg from '../assets/images/jessy-logo.png';
 
 const CustomNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
+
+      const sections = ['home', 'about', 'services', 'why-jessy', 'process', 'contact'];
+      const scrollPosition = window.scrollY + 120;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section) {
+          const top = section.offsetTop;
+          if (scrollPosition >= top) {
+            setActiveSection(sections[i]);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const handleNavLinkClick = () => {
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
     setExpanded(false);
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    
+    if (sectionId === 'home') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
@@ -43,9 +73,8 @@ const CustomNavbar = () => {
       >
         <Container>
           <Navbar.Brand
-            as={Link}
-            to="/"
-            onClick={handleNavLinkClick}
+            href="#home"
+            onClick={(e) => handleNavClick(e, 'home')}
             className="d-flex align-items-center gap-3"
           >
             <img
@@ -65,55 +94,49 @@ const CustomNavbar = () => {
             <Nav className="mx-auto align-items-lg-center my-3 my-lg-0">
 
               <Nav.Link
-                as={Link}
-                to="/"
-                onClick={handleNavLinkClick}
-                className="nav-link-custom"
+                href="#home"
+                onClick={(e) => handleNavClick(e, 'home')}
+                className={`nav-link-custom ${activeSection === 'home' ? 'active' : ''}`}
               >
                 Home
               </Nav.Link>
 
               <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={handleNavLinkClick}
-                className="nav-link-custom"
+                href="#about"
+                onClick={(e) => handleNavClick(e, 'about')}
+                className={`nav-link-custom ${activeSection === 'about' ? 'active' : ''}`}
               >
                 About
               </Nav.Link>
 
               <Nav.Link
-                as={Link}
-                to="/services"
-                onClick={handleNavLinkClick}
-                className="nav-link-custom"
+                href="#services"
+                onClick={(e) => handleNavClick(e, 'services')}
+                className={`nav-link-custom ${activeSection === 'services' ? 'active' : ''}`}
               >
                 Services
               </Nav.Link>
 
               <Nav.Link
-                as={Link}
-                to="/why-jessy"
-                onClick={handleNavLinkClick}
-                className="nav-link-custom"
+                href="#why-jessy"
+                onClick={(e) => handleNavClick(e, 'why-jessy')}
+                className={`nav-link-custom ${activeSection === 'why-jessy' ? 'active' : ''}`}
               >
                 Why Jessy
               </Nav.Link>
 
               <Nav.Link
-                as={Link}
-                to="/process"
-                onClick={handleNavLinkClick}
-                className="nav-link-custom"
+                href="#process"
+                onClick={(e) => handleNavClick(e, 'process')}
+                className={`nav-link-custom ${activeSection === 'process' ? 'active' : ''}`}
               >
                 Process
               </Nav.Link>
 
               <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={handleNavLinkClick}
-                className="nav-link-custom"
+                href="#contact"
+                onClick={(e) => handleNavClick(e, 'contact')}
+                className={`nav-link-custom ${activeSection === 'contact' ? 'active' : ''}`}
               >
                 Contact
               </Nav.Link>
@@ -121,14 +144,14 @@ const CustomNavbar = () => {
             </Nav>
 
             <div className="d-flex align-items-center">
-              <Link
-                to="/contact"
-                onClick={handleNavLinkClick}
+              <a
+                href="#contact"
+                onClick={(e) => handleNavClick(e, 'contact')}
                 className="btn-jessy-primary"
               >
                 <span>Get Started</span>
                 <i className="bi bi-arrow-right"></i>
-              </Link>
+              </a>
             </div>
           </Navbar.Collapse>
         </Container>
