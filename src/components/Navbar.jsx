@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import logoImg from '../assets/images/jessy-logo.png';
 
 const CustomNavbar = () => {
@@ -9,18 +10,22 @@ const CustomNavbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 40);
     };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const handleNavLinkClick = () => {
     setExpanded(false);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -37,48 +42,93 @@ const CustomNavbar = () => {
         className={`custom-navbar ${scrolled ? 'scrolled' : ''}`}
       >
         <Container>
-          <Navbar.Brand href="#home" className="d-flex align-items-center gap-3">
+          <Navbar.Brand
+            as={Link}
+            to="/"
+            onClick={handleNavLinkClick}
+            className="d-flex align-items-center gap-3"
+          >
             <img
               src={logoImg}
               alt="Jessy Agencies Logo"
               className="brand-logo-img"
             />
-            <span className="brand-title">Jessy Agencies</span>
+
+            <span className="brand-title">
+              Jessy Agencies
+            </span>
           </Navbar.Brand>
-          
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          
+
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto align-items-lg-center my-3 my-lg-0">
-              <Nav.Link href="#home" onClick={handleNavLinkClick} className="nav-link-custom">
+
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={handleNavLinkClick}
+                className="nav-link-custom"
+              >
                 Home
               </Nav.Link>
-              <Nav.Link href="#about" onClick={handleNavLinkClick} className="nav-link-custom">
+
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={handleNavLinkClick}
+                className="nav-link-custom"
+              >
                 About
               </Nav.Link>
-              <Nav.Link href="#services" onClick={handleNavLinkClick} className="nav-link-custom">
+
+              <Nav.Link
+                as={Link}
+                to="/services"
+                onClick={handleNavLinkClick}
+                className="nav-link-custom"
+              >
                 Services
               </Nav.Link>
-              <Nav.Link href="#why-jessy" onClick={handleNavLinkClick} className="nav-link-custom">
+
+              <Nav.Link
+                as={Link}
+                to="/why-jessy"
+                onClick={handleNavLinkClick}
+                className="nav-link-custom"
+              >
                 Why Jessy
               </Nav.Link>
-              <Nav.Link href="#process" onClick={handleNavLinkClick} className="nav-link-custom">
+
+              <Nav.Link
+                as={Link}
+                to="/process"
+                onClick={handleNavLinkClick}
+                className="nav-link-custom"
+              >
                 Process
               </Nav.Link>
-              <Nav.Link href="#contact" onClick={handleNavLinkClick} className="nav-link-custom">
+
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={handleNavLinkClick}
+                className="nav-link-custom"
+              >
                 Contact
               </Nav.Link>
+
             </Nav>
-            
+
             <div className="d-flex align-items-center">
-              <a 
-                href="#contact" 
-                onClick={handleNavLinkClick} 
+              <Link
+                to="/contact"
+                onClick={handleNavLinkClick}
                 className="btn-jessy-primary"
               >
                 <span>Get Started</span>
                 <i className="bi bi-arrow-right"></i>
-              </a>
+              </Link>
             </div>
           </Navbar.Collapse>
         </Container>

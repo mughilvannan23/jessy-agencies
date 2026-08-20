@@ -1,4 +1,6 @@
 import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
 import CustomNavbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustFeatures from './components/TrustFeatures';
@@ -13,25 +15,39 @@ import Contact from './components/Contact';
 import ServiceLinks from './components/ServiceLinks';
 import Footer from './components/Footer';
 
+function Home() {
+  return (
+    <>
+      <Hero />
+      <TrustFeatures />
+      <About />
+      <Services />
+      <WhyJessy />
+      <Journey />
+      <Stats />
+      <Process />
+      <CTA />
+      <ServiceLinks />
+      <Contact />
+    </>
+  );
+}
+
 function App() {
   return (
-    <div className="app-container">
-      <CustomNavbar />
-      <main>
-        <Hero />
-        <TrustFeatures />
-        <About />
-        <Services />
-        <WhyJessy />
-        <Journey />
-        <Stats />
-        <Process />
-        <CTA />
-        <ServiceLinks />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <HashRouter>
+      <div className="app-container">
+        <CustomNavbar />
+
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
 
