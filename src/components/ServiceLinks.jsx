@@ -6,20 +6,20 @@ const ServiceLinks = () => {
   const links = [
     {
       title: 'Jessy Staffing',
-      url: 'staffing.jessyagencies.com',
-      href: 'https://staffing.jessyagencies.com/',
+      url: 'www.staffing.jessyagencies.com',
+      href: 'https://www.staffing.jessyagencies.com/',
       icon: 'bi-briefcase-fill',
     },
     {
       title: 'Jessy Real Estate',
-      url: 'realestate.jessyagencies.com',
-      href: 'https://realestate.jessyagencies.com/',
+      url: 'www.realestate.jessyagencies.com',
+      href: 'https://www.realestate.jessyagencies.com/',
       icon: 'bi-building-fill',
     },
     {
       title: 'Jessy Matrimony',
-      url: 'matrimony.jessyagencies.com',
-      href: 'https://matrimony.jessyagencies.com/',
+      url: 'www.matrimony.jessyagencies.com',
+      href: 'https://www.matrimony.jessyagencies.com/',
       icon: 'bi-heart-fill',
     },
   ];
@@ -37,14 +37,11 @@ const ServiceLinks = () => {
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
                 className="gateway-card"
               >
-                <div className="d-flex align-items-center gap-3">
-                  <div
-                    className="trust-icon-box"
-                    style={{ width: '42px', height: '42px', fontSize: '1.2rem' }}
-                  >
+                <div className="gateway-info">
+                  <div className="trust-icon-box gateway-icon">
                     <i className={`bi ${item.icon}`}></i>
                   </div>
-                  <div>
+                  <div className="gateway-text">
                     <h4 className="gateway-title">{item.title}</h4>
                     <p className="gateway-url">{item.url}</p>
                   </div>
@@ -54,8 +51,7 @@ const ServiceLinks = () => {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-jessy-secondary py-2 px-3 small"
-                  style={{ fontSize: '0.85rem' }}
+                  className="btn-jessy-secondary gateway-btn"
                 >
                   <span>Visit Website</span>
                   <i className="bi bi-arrow-right"></i>

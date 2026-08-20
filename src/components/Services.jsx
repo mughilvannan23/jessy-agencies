@@ -18,7 +18,7 @@ const Services = () => {
         'Employer Support',
         'Professional Assistance',
       ],
-      link: 'https://staffing.jessyagencies.com/',
+      link: 'https://www.staffing.jessyagencies.com/',
       btnText: 'Visit Jessy Staffing',
     },
     {
@@ -35,7 +35,7 @@ const Services = () => {
         'Real Estate Opportunities',
         'Personalized Guidance',
       ],
-      link: 'https://realestate.jessyagencies.com/',
+      link: 'https://www.realestate.jessyagencies.com/',
       btnText: 'Visit Jessy Real Estate',
     },
     {
@@ -52,7 +52,7 @@ const Services = () => {
         'Family-Friendly Approach',
         'Relationship-Focused Service',
       ],
-      link: 'https://matrimony.jessyagencies.com/',
+      link: 'https://www.matrimony.jessyagencies.com/',
       btnText: 'Visit Jessy Matrimony',
     },
   ];

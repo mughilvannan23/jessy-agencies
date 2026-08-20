@@ -47,7 +47,7 @@ const CustomNavbar = () => {
 
     const element = document.getElementById(sectionId);
     if (element) {
-      const navbarOffset = 80;
+      const navbarOffset = 95;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
 

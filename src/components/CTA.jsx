@@ -5,7 +5,7 @@ import logoImg from '../assets/images/jessy-logo.png';
 
 const CTA = () => {
   return (
-    <section className="section-padding py-0" style={{ background: 'var(--bg-dark-primary)' }}>
+    <section className="section-padding py-5" style={{ background: 'var(--bg-dark-primary)' }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +15,13 @@ const Contact = () => {
 
   const [validated, setValidated] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
   const [formErrors, setFormErrors] = useState({});
+
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleChange = (e) => {
     setFormData({
@@ -52,8 +59,9 @@ const Contact = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSendError('');
     const errors = validateForm();
     
     if (Object.keys(errors).length > 0) {
@@ -64,17 +72,47 @@ const Contact = () => {
 
     setFormErrors({});
     setValidated(true);
-    setSubmitted(true);
+    setSending(true);
 
-    // Trigger celebration confetti
+    const templateParams = {
+      from_name: formData.fullName,
+      phone: formData.phone,
+      reply_to: formData.email || formData.phone,
+      email: formData.email || 'Not provided',
+      service: formData.service,
+      message: formData.message || 'No message provided',
+    };
+
     try {
-      confetti({
-        particleCount: 90,
-        spread: 80,
-        origin: { y: 0.6 },
-      });
-    } catch (err) {
-      console.log(err);
+      if (
+        SERVICE_ID && 
+        TEMPLATE_ID && 
+        PUBLIC_KEY && 
+        SERVICE_ID !== 'YOUR_SERVICE_ID'
+      ) {
+        await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      } else {
+        console.warn('EmailJS environment keys are not configured yet in .env file.');
+        await new Promise((resolve) => setTimeout(resolve, 800));
+      }
+
+      setSending(false);
+      setSubmitted(true);
+
+      // Trigger celebration confetti
+      try {
+        confetti({
+          particleCount: 90,
+          spread: 80,
+          origin: { y: 0.6 },
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setSending(false);
+      setSendError('Failed to send enquiry. Please check your connection or try calling us directly.');
     }
   };
 
@@ -190,6 +228,7 @@ const Contact = () => {
                     onClick={() => {
                       setSubmitted(false);
                       setValidated(false);
+                      setSendError('');
                       setFormErrors({});
                       setFormData({ fullName: '', phone: '', email: '', service: 'Jessy Staffing', message: '' });
                     }}
@@ -199,6 +238,13 @@ const Contact = () => {
                 </Alert>
               ) : (
                 <Form noValidate onSubmit={handleSubmit}>
+                  {sendError && (
+                    <Alert variant="danger" className="bg-dark text-danger border-danger mb-3 p-3 rounded-3">
+                      <i className="bi bi-exclamation-triangle-fill me-2"></i>
+                      {sendError}
+                    </Alert>
+                  )}
+
                   <Row className="g-3">
                     <Col md={6}>
                       <Form.Group controlId="fullName">
@@ -287,9 +333,22 @@ const Contact = () => {
                     </Col>
 
                     <Col md={12}>
-                      <button type="submit" className="btn-jessy-primary w-100 justify-content-center mt-2">
-                        <span>Send Enquiry</span>
-                        <i className="bi bi-send-fill ms-1"></i>
+                      <button
+                        type="submit"
+                        disabled={sending}
+                        className="btn-jessy-primary w-100 justify-content-center mt-2"
+                      >
+                        {sending ? (
+                          <>
+                            <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                            <span>Sending...</span>
+                          </>
+                        ) : (
+                          <>
+                            <span>Send Enquiry</span>
+                            <i className="bi bi-send-fill ms-1"></i>
+                          </>
+                        )}
                       </button>
                     </Col>
                   </Row>

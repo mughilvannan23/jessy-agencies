@@ -9,7 +9,7 @@ const Journey = () => {
       title: 'Looking for a Job?',
       desc: 'Find executive and workforce career opportunities matching your skillset with Jessy Staffing.',
       btnText: 'Explore Staffing',
-      link: 'https://staffing.jessyagencies.com/',
+      link: 'https://www.staffing.jessyagencies.com/',
       badgeColor: '#10b981',
     },
     {
@@ -17,7 +17,7 @@ const Journey = () => {
       title: 'Looking for Property?',
       desc: 'Discover ideal residential, commercial, and land real estate opportunities with Jessy Real Estate.',
       btnText: 'Explore Real Estate',
-      link: 'https://realestate.jessyagencies.com/',
+      link: 'https://www.realestate.jessyagencies.com/',
       badgeColor: '#38bdf8',
     },
     {
@@ -25,7 +25,7 @@ const Journey = () => {
       title: 'Looking for a Partner?',
       desc: 'Begin your meaningful journey to find a compatible life partner with Jessy Matrimony.',
       btnText: 'Explore Matrimony',
-      link: 'https://matrimony.jessyagencies.com/',
+      link: 'https://www.matrimony.jessyagencies.com/',
       badgeColor: '#f43f5e',
     },
   ];
