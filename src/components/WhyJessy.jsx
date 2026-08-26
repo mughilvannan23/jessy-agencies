@@ -29,6 +29,11 @@ const WhyJessy = () => {
       title: 'Long-Term Relationships',
       desc: 'Focusing on building lasting trust and enduring value with clients and partners.',
     },
+    {
+      icon: 'bi-geo-alt-fill',
+      title: 'All-Tamil Nadu Reach',
+      desc: 'Providing dedicated staffing, real estate, and matrimonial services across all districts in Tamil Nadu.',
+    },
   ];
 
   return (
