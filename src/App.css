@@ -1207,6 +1207,204 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
 }
 
+/* SECTION: FRANCHISE OPPORTUNITY (LIGHT CRISP THEME WITH BALANCED COLOR ACCENTS) */
+.franchise-section {
+  background: var(--bg-light-primary);
+  position: relative;
+  color: var(--text-light-primary);
+  border-top: 1px solid var(--border-light);
+}
+
+.franchise-service-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 34px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.franchise-service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1), 0 0 15px rgba(29, 112, 184, 0.15);
+}
+
+.franchise-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.franchise-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.franchise-num-badge {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent-blue);
+  background: var(--accent-blue-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(29, 112, 184, 0.2);
+}
+
+.franchise-card-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-light-primary) !important;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.franchise-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-light-secondary) !important;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.franchise-card-btn {
+  font-size: 0.92rem !important;
+  padding: 12px 20px !important;
+}
+
+/* Why Become a Partner 4-Point Grid */
+.why-partner-wrapper {
+  background: var(--bg-light-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 50px 36px;
+}
+
+.why-partner-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 26px 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.why-partner-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.why-partner-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.why-partner-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-light-primary) !important;
+  margin-bottom: 8px;
+}
+
+.why-partner-desc {
+  font-size: 0.9rem;
+  color: var(--text-light-secondary) !important;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Franchise CTA Box inside Light Section */
+.franchise-cta-box {
+  background: linear-gradient(135deg, #072a40 0%, #0e4166 100%);
+  border: 1px solid rgba(229, 169, 60, 0.4);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.franchise-cta-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(229, 169, 60, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.franchise-cta-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  margin-bottom: 10px;
+}
+
+.franchise-cta-desc {
+  font-size: 1.05rem;
+  color: var(--text-dark-secondary) !important;
+  line-height: 1.6;
+}
+
+/* Franchise Popup Modal Styles */
+.franchise-modal-content {
+  background: var(--bg-dark-card) !important;
+  border: 1px solid rgba(229, 169, 60, 0.4) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(229, 169, 60, 0.15) !important;
+  color: #ffffff !important;
+  overflow: hidden;
+}
+
+.franchise-modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 24px 28px 16px 28px !important;
+}
+
+.franchise-modal-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.franchise-modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+.franchise-modal-body {
+  padding: 20px 28px 28px 28px !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.75 !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
 /* MOBILE RESPONSIVE OVERFLOW FIXES */
 @media (max-width: 991.98px) {
   .navbar-collapse {
@@ -1218,10 +1416,16 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #e2e8f0;
     max-width: 100%;
   }
+  .why-partner-wrapper {
+    padding: 35px 20px;
+  }
+  .franchise-cta-box {
+    padding: 30px 24px;
+  }
 }
 
 @media (max-width: 575.98px) {
-  .why-card, .process-card, .journey-card, .trust-card, .contact-info-card, .contact-form-card, .service-card-main {
+  .why-card, .process-card, .journey-card, .trust-card, .contact-info-card, .contact-form-card, .service-card-main, .franchise-service-card, .franchise-form-card, .franchise-contact-card, .why-partner-card {
     padding: 20px 16px !important;
   }
   .section-padding {
@@ -1232,4 +1436,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 16px !important;
     overflow-x: hidden;
   }
+  .franchise-cta-title {
+    font-size: 1.5rem !important;
+  }
 }
+

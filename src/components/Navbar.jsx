@@ -12,7 +12,7 @@ const CustomNavbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
 
-      const sections = ['home', 'about', 'services', 'why-jessy', 'process', 'contact'];
+      const sections = ['home', 'about', 'services', 'why-jessy', 'process', 'franchise', 'contact'];
       const scrollPosition = window.scrollY + 120;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -131,6 +131,14 @@ const CustomNavbar = () => {
                 className={`nav-link-custom ${activeSection === 'process' ? 'active' : ''}`}
               >
                 Process
+              </Nav.Link>
+
+              <Nav.Link
+                href="#franchise"
+                onClick={(e) => handleNavClick(e, 'franchise')}
+                className={`nav-link-custom ${activeSection === 'franchise' ? 'active' : ''}`}
+              >
+                Franchise
               </Nav.Link>
 
               <Nav.Link

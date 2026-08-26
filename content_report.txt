@@ -1,0 +1,376 @@
+================================================================================
+                    JESSY AGENCIES - FULL WEBSITE CONTENT REPORT
+================================================================================
+Generated Date : 2026-08-26
+Website Name   : Jessy Agencies
+Website URL    : https://www.jessyagencies.com/
+Headquarters   : Tiruvannamalai, Tamil Nadu, India
+Founder        : B. Devaraj
+Description    : Master portal connecting clients and individuals to three 
+                 specialized services: Staffing, Real Estate, and Matrimony,
+                 plus dedicated Franchise Opportunities across all divisions.
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. Header & Navigation
+2. Hero Section
+3. Trust Strip / Key Highlights
+4. About Jessy Agencies
+5. Core Services (Detailed Breakdown & URLs)
+6. Why Choose Jessy Agencies (Key Value Propositions)
+7. Personal Journey / Goal Matcher
+8. Key Statistics
+9. How It Works / 4-Step Process
+10. Call to Action (CTA) Section
+11. Franchise Opportunity (Services, Benefits, CTA, Popup Modal & WhatsApp Redirect)
+12. Service Gateways / External Portal Links
+13. General Contact Information & Enquiry Form
+14. Footer & Legal Information
+15. Complete Inventory of Links & Contact Channels
+
+================================================================================
+1. HEADER & NAVIGATION BAR
+================================================================================
+- Brand Logo & Title: Jessy Agencies
+- Navigation Menu Items (in exact order):
+  * Home        -> Anchors to #home
+  * About       -> Anchors to #about
+  * Services    -> Anchors to #services
+  * Why Jessy   -> Anchors to #why-jessy
+  * Process     -> Anchors to #process
+  * Franchise   -> Anchors to #franchise
+  * Contact     -> Anchors to #contact
+- Header Action Button:
+  * Text: "Get Started" (with arrow icon) -> Anchors to #contact
+
+================================================================================
+2. HERO SECTION
+================================================================================
+- Top Badge: "WELCOME TO JESSY AGENCIES" (Star Icon)
+- Main Heading: "One Trusted Name. Three Powerful Services."
+- Sub-heading / Description:
+  "Connecting people with the right career opportunities, premium properties, 
+   and lifelong partners through our dedicated professional services."
+- Primary CTA Button: "Explore Our Services" -> Anchors to #services
+- Secondary CTA Button: "Contact Us" -> Anchors to #contact
+- Floating Visual Badges:
+  * Floating Card 1: [Briefcase Icon] "Jessy Staffing" | "Career Opportunities"
+  * Floating Card 2: [House Icon]     "Jessy Real Estate" | "Property Solutions"
+  * Floating Card 3: [Heart Icon]     "Jessy Matrimony" | "Find Your Match"
+
+================================================================================
+3. TRUST STRIP / KEY HIGHLIGHTS
+================================================================================
+1. Trusted Approach
+   - Description: Professional and customer-focused service built on transparency.
+   - Icon: Shield Check
+
+2. Multiple Solutions
+   - Description: Three specialized services under one unified brand.
+   - Icon: Grid 1x2 Fill
+
+3. People First
+   - Description: Solutions thoughtfully designed around real customer needs.
+   - Icon: People Fill
+
+4. Reliable Support
+   - Description: Dedicated guidance whenever you need assistance.
+   - Icon: Headset
+
+================================================================================
+4. ABOUT JESSY AGENCIES
+================================================================================
+- Top Badge: "ABOUT JESSY AGENCIES" (Award Icon)
+- Section Heading: "Built Around People, Opportunities & Possibilities"
+- Floating Image Badge: "3-in-1" | "Trusted Master Brand"
+- Narrative Paragraph 1:
+  "Jessy Agencies is a multi-service organization focused on helping people make 
+   better decisions in important areas of life and business."
+- Narrative Paragraph 2:
+  "From finding the right career opportunity to discovering the right property 
+   and finding a meaningful life partner, Jessy Agencies brings specialized 
+   services together under one trusted brand."
+- Action Button: "Discover More" -> Anchors to #services
+
+================================================================================
+5. CORE SERVICES (DETAILED BREAKDOWN)
+================================================================================
+- Section Badge: "OUR CORE SERVICES"
+- Section Heading: "Three Services. One Trusted Agency."
+- Subtitle: "Explore our specialized services designed to connect you with the 
+             right opportunities across employment, real estate, and life 
+             partnerships."
+
+--- SERVICE 1: JESSY STAFFING ---
+* Title: Jessy Staffing
+* Description: Connecting talented people with the right career opportunities 
+  and helping businesses find the right workforce.
+* Key Features:
+  - Recruitment & Staffing
+  - Candidate Opportunities
+  - Employer Support
+  - Professional Assistance
+* Portal Link: https://www.staffing.jessyagencies.com/
+* Button Text: "Visit Jessy Staffing"
+
+--- SERVICE 2: JESSY REAL ESTATE ---
+* Title: Jessy Real Estate
+* Description: Helping you discover properties and real estate opportunities 
+  that match your needs, goals and budget.
+* Key Features:
+  - Property Assistance
+  - Buying & Selling Support
+  - Real Estate Opportunities
+  - Personalized Guidance
+* Portal Link: https://www.realestate.jessyagencies.com/
+* Button Text: "Visit Jessy Real Estate"
+
+--- SERVICE 3: JESSY MATRIMONY ---
+* Title: Jessy Matrimony
+* Description: Helping individuals and families connect with compatible partners 
+  and take the next step toward a meaningful relationship.
+* Key Features:
+  - Matrimonial Profiles
+  - Partner Search
+  - Family-Friendly Approach
+  - Relationship-Focused Service
+* Portal Link: https://www.matrimony.jessyagencies.com/
+* Button Text: "Visit Jessy Matrimony"
+
+================================================================================
+6. FRANCHISE OPPORTUNITY (DEDICATED SECTION)
+================================================================================
+- Section ID: #franchise
+- Section Badge: "FRANCHISE OPPORTUNITY"
+- Main Heading: "Build Your Own Business With Jessy Agencies"
+- Description:
+  "Turn your entrepreneurial goals into a business opportunity with the trusted 
+   Jessy Agencies brand. We offer franchise opportunities for our specialized 
+   services, allowing passionate individuals and business partners to grow with 
+   an established multi-service brand."
+
+--- FRANCHISE CARDS ---
+1. Jessy Staffing Franchise (01)
+   - Description: "Start your own staffing and recruitment business with the 
+     Jessy Staffing brand. Connect job seekers with career opportunities and 
+     help businesses find the right workforce."
+   - Action Button: "Enquire for Staffing Franchise" (opens popup modal with pre-selected service)
+
+2. Jessy Real Estate Franchise (02)
+   - Description: "Build a real estate business with the Jessy Real Estate 
+     brand and assist customers with property buying, selling, and real estate 
+     opportunities."
+   - Action Button: "Enquire for Real Estate Franchise" (opens popup modal with pre-selected service)
+
+3. Jessy Matrimony Franchise (03)
+   - Description: "Become a local representative of Jessy Matrimony and help 
+     individuals and families find suitable life partners through a trusted 
+     matrimonial service."
+   - Action Button: "Enquire for Matrimony Franchise" (opens popup modal with pre-selected service)
+
+--- WHY BECOME A JESSY FRANCHISE PARTNER? (4-POINT FEATURES) ---
+* Trusted Brand               – Grow your business under the established Jessy Agencies brand.
+* Multiple Business Opps     – Choose from Staffing, Real Estate, or Matrimony services.
+* Professional Guidance       – Receive support and guidance to help establish and operate your franchise.
+* Growth Opportunity          – Build a sustainable local business while becoming part of the Jessy Agencies network.
+
+--- FRANCHISE ENQUIRY CTA ---
+* Heading: "Ready to Start Your Jessy Franchise?"
+* Description: "Interested in becoming a Jessy Agencies franchise partner? 
+  Contact our team to learn about franchise opportunities, requirements, 
+  support, and the next steps."
+* Primary Button: "Become a Franchise Partner" (opens popup modal)
+* Secondary Button: "Contact Us" (scrolls to #contact)
+
+--- FRANCHISE POPUP APPLICATION MODAL & WHATSAPP REDIRECTION ---
+* Interactive Popup Modal opens on clicking any "Enquire" or "Become a Partner" button
+* Fields:
+  - Full Name * (Required)
+  - Mobile Number * (Required, min 8 digits)
+  - Email Address (Optional, validated format)
+  - City / Location * (Required)
+  - Interested Franchise * (Dropdown: Jessy Staffing, Jessy Real Estate, Jessy Matrimony, Multiple Services)
+  - Investment Range (Dropdown: Below ₹2 Lakhs, ₹2 - ₹5 Lakhs, ₹5 - ₹10 Lakhs, Above ₹10 Lakhs)
+  - Message (Optional)
+* Submission Button: "Submit Franchise Enquiry"
+* Form Action: On submit, the enquiry data is formatted and automatically redirects directly to WhatsApp chat (+91 8056567352) with all details pre-filled.
+* Success UI: Confetti celebration + direct "Open in WhatsApp" action button.
+
+--- FRANCHISE CONTACT DETAILS (HEAD OFFICE) ---
+* Founder         : B. Devaraj
+* Mobile          : 8056567352 / 9487577852
+* Office          : 04175-252535
+* Address         : No 267, Ramu Army Complex, Vettavalam Road, Enthal Bypass, 
+                    Tiruvannamalai - 606601, Tamil Nadu
+
+================================================================================
+7. WHY CHOOSE JESSY AGENCIES (KEY VALUE PROPOSITIONS)
+================================================================================
+- Section Badge: "WHY JESSY"
+- Section Heading: "Why People Choose Jessy Agencies"
+- Subtitle: "We stand apart through our commitment to integrity, dedicated 
+             domain expertise, and customer-first approach."
+
+1. Trusted Approach
+   - Transparency, professionalism and total customer satisfaction in every transaction.
+
+2. Specialized Services
+   - Dedicated expert solutions crafted for your distinct personal and business needs.
+
+3. One Trusted Brand
+   - Multiple essential life services conveniently available under one recognizable brand.
+
+4. Personal Attention
+   - We thoroughly understand your requirements before suggesting tailored solutions.
+
+5. Long-Term Relationships
+   - Focusing on building lasting trust and enduring value with clients and partners.
+
+================================================================================
+8. PERSONAL JOURNEY / GOAL MATCHER
+================================================================================
+- Section Badge: "YOUR PERSONAL JOURNEY"
+- Section Heading: "Whatever Your Goal, Start With Jessy"
+- Subtitle: "Select the path that matches your current goal and let us connect you 
+             to the right opportunity."
+
+* Pathway 01: "Looking for a Job?"
+  - Details: Find executive and workforce career opportunities matching your 
+    skillset with Jessy Staffing.
+  - Action Button: "Explore Staffing" -> https://www.staffing.jessyagencies.com/
+
+* Pathway 02: "Looking for Property?"
+  - Details: Discover ideal residential, commercial, and land real estate 
+    opportunities with Jessy Real Estate.
+  - Action Button: "Explore Real Estate" -> https://www.realestate.jessyagencies.com/
+
+* Pathway 03: "Looking for a Partner?"
+  - Details: Begin your meaningful journey to find a compatible life partner 
+    with Jessy Matrimony.
+  - Action Button: "Explore Matrimony" -> https://www.matrimony.jessyagencies.com/
+
+================================================================================
+9. KEY STATISTICS
+================================================================================
+* 03   -> Specialized Services
+* 01   -> Trusted Brand
+* 24/7 -> Online Access
+* 100% -> Customer Focus
+
+================================================================================
+10. HOW IT WORKS / 4-STEP PROCESS
+================================================================================
+- Section Badge: "HOW IT WORKS"
+- Section Heading: "A Simple Way to Get Started"
+- Subtitle: "Four straightforward steps to achieving your career, property, or 
+             matrimonial aspirations."
+
+Step 01. Choose Your Service
+- Details: Select from Jessy Staffing, Real Estate, or Matrimony based on your immediate need.
+
+Step 02. Explore Your Options
+- Details: Review curated job openings, property listings, or matrimonial profiles.
+
+Step 03. Connect With Us
+- Details: Reach out to our specialized team for personalized assistance and consultations.
+
+Step 04. Take the Next Step
+- Details: Move forward with clarity and confidence knowing you have a trusted partner.
+
+================================================================================
+11. CALL TO ACTION (CTA) SECTION
+================================================================================
+- Heading: "Ready to Take Your Next Step?"
+- Description: "Whether you're looking for a rewarding career, a dream property, 
+  or a meaningful life partner, Jessy Agencies is here to support you."
+- Action Buttons:
+  * "Explore Services"           -> Anchors to #services
+  * "Contact Jessy Agencies"     -> Anchors to #contact
+
+================================================================================
+12. SERVICE GATEWAYS / PORTAL LINKS
+================================================================================
+1. Jessy Staffing
+   - URL: www.staffing.jessyagencies.com
+   - Direct Link: https://www.staffing.jessyagencies.com/
+   - Action: "Visit Website"
+
+2. Jessy Real Estate
+   - URL: www.realestate.jessyagencies.com
+   - Direct Link: https://www.realestate.jessyagencies.com/
+   - Action: "Visit Website"
+
+3. Jessy Matrimony
+   - URL: www.matrimony.jessyagencies.com
+   - Direct Link: https://www.matrimony.jessyagencies.com/
+   - Action: "Visit Website"
+
+================================================================================
+13. GENERAL CONTACT INFORMATION & ENQUIRY FORM
+================================================================================
+- Section Badge: "GET IN TOUCH"
+- Section Heading: "Let's Connect"
+- Subtitle: "Have a question or want to know more about our services? Get in touch 
+             with Jessy Agencies today."
+
+CONTACT DETAILS:
+* Founder         : B. Devaraj
+* Physical Address: No 267, Ramu Army Complex, Vettavalam Road, Enthal Bypass, 
+                    Tiruvannamalai - 606601, Tamil Nadu
+* Mobile Numbers  : 8056567352 / 9487577852
+* Office Telephone: 04175-252535
+
+CONTACT ENQUIRY FORM SPECIFICATIONS:
+* Full Name       : [Text input - Required]
+* Phone Number    : [Tel input - Required, min 8 digits]
+* Email Address   : [Email input - Optional]
+* Select Service  : [Dropdown options]
+                    - Jessy Staffing
+                    - Jessy Real Estate
+                    - Jessy Matrimony
+                    - General Enquiry
+* Message         : [Textarea - Optional]
+* Submission CTA  : "Send Enquiry" (Powered by EmailJS integration with confetti feedback)
+* Success Message : "Enquiry Sent Successfully! Thank you, [Name]. Our team will 
+                     get back to you shortly regarding your enquiry for [Service]."
+
+================================================================================
+14. FOOTER & LEGAL INFORMATION
+================================================================================
+- Brand Name: Jessy Agencies
+- Brand Tagline: "Connecting People, Opportunities & Dreams through dedicated 
+                  staffing, real estate, and matrimonial services."
+- Quick Links:
+  * Home (#home)
+  * About Us (#about)
+  * Services (#services)
+  * Franchise (#franchise)
+  * Why Jessy (#why-jessy)
+  * Process (#process)
+  * Contact (#contact)
+- Specialized Portals:
+  * Jessy Staffing (https://staffing.jessyagencies.com/)
+  * Jessy Real Estate (https://realestate.jessyagencies.com/)
+  * Jessy Matrimony (https://matrimony.jessyagencies.com/)
+- Contact Summary:
+  * Founder: B. Devaraj
+  * Mobile: 8056567352 / 9487577852
+  * Office: 04175-252535
+  * Location: Tiruvannamalai - 606601
+- Copyright: "© 2026 Jessy Agencies. All Rights Reserved."
+
+================================================================================
+15. COMPLETE INVENTORY OF EXTERNAL PORTALS & CHANNELS
+================================================================================
+* Main Website Portal    : https://www.jessyagencies.com/
+* Staffing Portal        : https://www.staffing.jessyagencies.com/
+* Real Estate Portal     : https://www.realestate.jessyagencies.com/
+* Matrimony Portal       : https://www.matrimony.jessyagencies.com/
+* Contact Phone Lines    : tel:8056567352
+                         : tel:9487577852
+                         : tel:04175252535
+
+================================================================================
+                           END OF CONTENT REPORT
+================================================================================

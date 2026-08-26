@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import TrustFeatures from './components/TrustFeatures';
 import About from './components/About';
 import Services from './components/Services';
+import Franchise from './components/Franchise';
 import WhyJessy from './components/WhyJessy';
 import Journey from './components/Journey';
 import Stats from './components/Stats';
@@ -27,6 +28,7 @@ function Home() {
       <Stats />
       <Process />
       <CTA />
+      <Franchise />
       <ServiceLinks />
       <Contact />
     </>
